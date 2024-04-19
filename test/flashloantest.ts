@@ -116,8 +116,8 @@ describe("BinanceFlashloanPancakeswapV3", function () {
       // Send Flashloan Transaction
       const txFlashLoan = await contractFlashLoan.flashloanRequest(
         tokenPath,
-        0, // BorrowBUSD (see constructor)
-        amountBorrow, // BorrowWBNB (see constructor)
+        0, // BorrowWBNB (see constructor)
+        amountBorrow, // BorrowBUSD (see constructor)
         feeV3,
         routing
       );
